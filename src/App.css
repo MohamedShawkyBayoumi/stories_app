@@ -4,6 +4,47 @@ body {
   background-color: #ebebeb;
 }
 
+.loader-container {
+  position: absolute;
+  z-index: 999;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.3s ease;
+}
+
+.loader-container::before {
+  position: absolute;
+  content: "";
+  background: #fff;
+  opacity: 0.7;
+  height: 100%;
+  width: 100%;
+  transition: all 0.3s ease;
+}
+
+.loader {
+  border: 16px solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 16px solid #555;
+  width: 120px;
+  height: 120px;
+  -webkit-animation: spin 1.8s linear infinite;
+  animation: spin 1.8s linear infinite;
+}
+
+@-webkit-keyframes spin {
+  0% { -webkit-transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(360deg); }
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
 .container {
   height: 100%;
   width: 100%;
@@ -156,6 +197,7 @@ header ul li a:hover {
 }
 
 .login-signup-page-content {
+  position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;

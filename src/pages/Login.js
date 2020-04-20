@@ -1,11 +1,17 @@
-import React from 'react'
+import React, { useState } from 'react';
 import { TextInput } from '../components/UI';
 import { Link } from 'react-router-dom';
 
 function Login() {
+    const [isLoading, setIsLoading] = useState(false);
     return (
         <div className="login-signup-page">
             <div className="login-signup-page-content">
+                {isLoading && (
+                    <div className="loader-container">
+                        <div className="loader" />
+                    </div>
+                )}
                 <h1>Login to your Account</h1>
                 <form>
                     <TextInput
