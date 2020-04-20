@@ -1,15 +1,15 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
 
 function Header() {
     return (
         <header>
             <ul>
                 <li>
-                    <Link to='/' className={'tab-active'}>Home</Link>
+                    <NavLink to='/' exact={true} activeClassName='tab-active'>Home</NavLink>
                 </li>
                 <li>
-                    <Link to='/stories'>Stories</Link>
+                    <NavLink to='/stories' activeClassName='tab-active'>Stories</NavLink>
                 </li>
             </ul>
         </header>
