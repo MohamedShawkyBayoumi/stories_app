@@ -11,7 +11,6 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  
 }
 
 .app {
@@ -20,7 +19,7 @@ body {
   width: 90%;
   border-radius: 30px;
   border: 7px solid #f1f1f1;
-  overflow-y: scroll;
+  overflow: hidden;
   display: flex;
 }
 
@@ -41,10 +40,110 @@ body {
 } */
 
 main {
-  flex: 3;
+  flex: 4;
 }
 
 aside {
   flex: 1;
   background-color: #fafafa;
+}
+
+main,
+aside {
+  padding: 20px;
+}
+
+.side-head-links {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.side-head-links a {
+  text-decoration: none;
+  color: #5d5d5d;
+}
+
+.side-head-links a:hover {
+  color: #ababab;
+}
+
+.avatar-img {
+  display: flex;
+  justify-content: center;
+}
+
+.avatar-img div {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  background-size: cover !important;
+}
+
+.user-name {
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 0 !important;
+  font-size: 20px;
+}
+
+.user-job {
+  font-weight: 100;
+  text-align: center;
+  margin-top: 0 !important;
+  font-size: 14px;
+}
+
+header {
+  margin-bottom: 30px;
+}
+
+header ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+header ul li {
+  margin-right: 50px;
+}
+
+header ul li a {
+  text-decoration: none;
+  color: #5d5d5d;
+  font-weight: 600;
+  font-size: 18px;
+  letter-spacing: 2px;
+  
+}
+
+header ul li a:hover {
+  color: #ababab;
+}
+
+.tab-active {
+  border-bottom: 2px solid #313236;
+}
+
+.main-cards {
+  display: flex;
+}
+
+.main-card {
+  flex: 1;
+  margin-right: 20px;
+  padding: 10px;
+  height: 200px;
+  border-radius: 20px;
+  background-color: #fafafa;
+}
+
+.main-card:last-child {
+  margin-right: 0;
+}
+
+.main-card h3 {
+  font-weight: 100;
 }
