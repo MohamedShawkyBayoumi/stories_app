@@ -7,6 +7,8 @@ import Login from './pages/Login';
 import Signup from './pages/Signup';
 import Stories from './pages/Stories';
 import Profile from './pages/Profile';
+import Favrourites from './pages/Favrourites';
+import AddStory from './pages/AddStory';
 
 function App() {
   return (
@@ -19,6 +21,8 @@ function App() {
             <Route path='/signup' component={Signup} />
             <Route path='/stories' component={Stories} />
             <Route path='/profile' component={Profile} />
+            <Route path='/favourites' component={Favrourites} />
+            <Route path='/add_story' component={AddStory} />
           </main>
           <Side />
         </BrowserRouter>
