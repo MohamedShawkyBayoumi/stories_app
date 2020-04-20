@@ -64,22 +64,6 @@ body {
   display: flex;
 }
 
-/* .app::-webkit-scrollbar {
-  width: 5px;
-}
-
-.app::-webkit-scrollbar-track {
-  background: #f1f1f1; 
-}
- 
-.app::-webkit-scrollbar-thumb {
-  background: #888; 
-}
-
-.app::-webkit-scrollbar-thumb:hover {
-  background: #555; 
-} */
-
 main {
   flex: 4;
 }
@@ -343,4 +327,88 @@ textarea {
 
 textarea:focus {
   border: 2px solid #868686;
+}
+
+.stories {
+  overflow-y: auto;
+  padding: 0 20px;
+  height: 90%;
+}
+
+.stories::-webkit-scrollbar {
+  width: 7px;
+}
+
+.stories::-webkit-scrollbar-track {
+  background: #f1f1f1; 
+}
+ 
+.stories::-webkit-scrollbar-thumb {
+  background: #888; 
+}
+
+.stories::-webkit-scrollbar-thumb:hover {
+  background: #555; 
+}
+
+.story-card {
+  background-color: #fafafa;
+  height: 100px;
+  border-radius: 60px 20px 20px 20px;
+  padding: 15px 20px;
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.story-avatar {
+  height: 100%;
+  width: 120px;
+  margin-right: 40px;
+}
+
+.story-avatar div {
+  display: flex;
+  height: 100%;
+  width: 100%;
+  background-size: cover !important;
+  border-radius: 40px 10px 10px 10px;
+}
+
+.card-content {
+  flex: 1;
+}
+
+.card-content h2,
+.card-content h3 {
+  margin: 0;
+  line-height: 20px;
+  font-weight: 600;
+}
+
+.card-content h2 a {
+  text-decoration: none;
+  color: #313236;
+  font-size: 22px;
+}
+
+.card-content h2 a:hover {
+  color: #868686;
+}
+
+.card-content h3 {
+  font-weight: 400;
+  font-size: 14px;
+  color: #868686;
+  line-height: 10px;
+}
+
+.card-content-box {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.card-content-box div span {
+  margin-right: 40px;
 }

@@ -1,11 +1,23 @@
 import React from 'react'
 import Header from '../components/Header'
+import StoryCard from '../components/UI/StoryCard'
 
 function Stories() {
     return (
-        <div>
+        <div style={{ height: '100%' }}>
             <Header />
-            Stories
+            <div className="stories">
+                <StoryCard />
+                <StoryCard />
+                <StoryCard />
+                <StoryCard />
+                <StoryCard />
+                <StoryCard />
+                <StoryCard />
+                <StoryCard />
+                <StoryCard />
+                <StoryCard />
+            </div>
         </div>
     )
 }
