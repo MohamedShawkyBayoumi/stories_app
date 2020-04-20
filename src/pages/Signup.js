@@ -6,7 +6,7 @@ function Signup() {
     const [isLoading, setIsLoading] = useState(false);
     return (
         <div className="login-signup-page">
-            <div className="login-signup-page-content">
+            <div className="page-content">
                 {isLoading && (
                     <div className="loader-container">
                         <div className="loader" />
