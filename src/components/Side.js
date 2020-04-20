@@ -5,8 +5,10 @@ function Side() {
     return (
         <aside>
             <div className="side-head-links">
-                <Link to='/profile'>Profile</Link>
-                <Link to='/'>Logout</Link>
+                {/* <Link to='/profile'>Profile</Link> */}
+                {/* <Link to='/'>Logout</Link> */}
+                <Link to='/login'>Login</Link>
+                <Link to='/signup'>Signup</Link>
             </div>
             <div className="avatar-wrapper">
                 <div className="avatar-img">

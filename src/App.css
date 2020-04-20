@@ -147,3 +147,135 @@ header ul li a:hover {
 .main-card h3 {
   font-weight: 100;
 }
+
+.login-signup-page {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.login-signup-page-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.login-signup-page-content h1 {
+  font-size: 38px;
+}
+
+form {
+  text-align: center;
+}
+
+.input-label-wrapper {
+  position: relative;
+  width: 350px;
+  overflow: hidden;
+  margin-bottom: 20px;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="email"],
+input[type="number"] {
+  height: 45px;
+  width: 100%;
+  padding: 0;
+  font-size: 12px;
+  color: #444;
+  border-bottom: 2px solid #313236;
+  border-width: 0 0 2px;
+  outline-style: none;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+input:focus + .label-name .label-content,
+input:valid + .label-name .label-content {
+  transform: translateY(-100%);
+  font-size: 12px;
+}
+
+input:focus + .label-name::after,
+input:valid + .label-name::after {
+  transform: translateX(0%);
+}
+
+.label-name {
+  line-height: 1.71;
+  color: #313236;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  pointer-events: none;
+}
+
+.label-name::after {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  left: 0;
+  bottom: 0;
+  border-bottom: 2px solid #868686;
+  transform: translate(-100%);
+  transition: all 0.3s ease;
+}
+
+.label-content {
+  font-size: 20px;
+  position: absolute;
+  bottom: 10px;
+  left: 0;
+  transition: all 0.3s ease;
+}
+
+button[type="submit"] {
+  position: relative;
+  border: 1px solid #313236;
+  background: none;
+  cursor: pointer;
+  padding: 10px 25px;
+  outline: none;
+  border-radius: 5px;
+  font-family: 'Baloo Paaji 2', cursive;
+  font-weight: 600;
+  font-size: 16px;
+}
+
+button[type="submit"]::before {
+  content: "";
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  height: 100%;
+  width: 100%;
+  border-radius: 5px;
+  background-color: rgba(83, 88, 226, 0.1);
+  transition: all 0.3s ease;
+}
+
+
+button[type="submit"]:hover::before,
+button[type="submit"]:focus::before {
+  top: 0;
+  left: 0;
+}
+
+button[type="submit"]:active::before {
+  background-color: rgba(83, 88, 226, 0.2);
+}
+
+.own-account-p a {
+  text-decoration: none;
+  color: #313236;
+  font-weight: 700;
+}
+
+.own-account-p a:hover {
+  color: #5d5d5d;
+}
