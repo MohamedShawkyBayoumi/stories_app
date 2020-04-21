@@ -445,3 +445,57 @@ textarea:focus {
   color: #ababab;
   font-size: 14px;
 }
+
+.avatar-wrapper-edit {
+  margin-bottom: 20px;
+}
+
+.avatar-wrapper-edit .avatar-img div {
+  position: relative;
+  cursor: pointer;
+  height: 140px;
+  width: 140px;
+  border: 2px solid #e6e6e6;
+}
+
+.custom-file-input:hover::before {
+  content: "Edit";
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  font-size: 24px;
+  letter-spacing: 3px;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  border-radius: 50%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.custom-file-input {
+  color: transparent;
+  position: absolute;
+  z-index: 1;
+  height: 140px;
+  width: 140px;
+  border-radius: 50%;
+  outline: none;
+}
+
+.custom-file-input::-webkit-file-upload-button {
+  visibility: hidden;
+}
+
+.custom-file-input::before {
+  content: '';
+  display: inline-block;
+  background: transparent;
+  -webkit-user-select: none;
+  cursor: pointer;
+  height: 140px;
+  width: 140px;
+}
+
