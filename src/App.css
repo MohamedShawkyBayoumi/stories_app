@@ -538,3 +538,13 @@ textarea:focus {
   width: 140px;
 }
 
+.head-title-heart {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.heart img {
+  width: 40px;
+  cursor: pointer;
+}
